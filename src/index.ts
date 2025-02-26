@@ -1,7 +1,6 @@
-import express from "express";
-import { Request, Response } from "express";
+import express, { Express, Request, Response } from "express";
 
-const app = express();
+const app: Express = express();
 
 app.get("/api/hello", (req: Request, res: Response) => {
   res.json({ message: "Hello from the TypeScript backend!" });
