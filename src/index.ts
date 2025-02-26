@@ -1,9 +1,8 @@
 import express from "express";
-import { Request, Response as ExpressResponse } from "express";
 
 const app = express();
 
-app.get("/api/hello", (req: Request, res: ExpressResponse) => {
+app.get("/api/hello", (req: express.Request, res: express.Response) => {
   res.json({ message: "Hello from the TypeScript backend!" });
 });
 if (process.env.NODE_ENV !== "production") {
