@@ -1,10 +1,10 @@
 import express from "express";
-import { Request, Response } from "express";
+import { Request, Response } from "express"; // Should work, but let’s ensure clarity
 
 const app = express();
 
 app.get("/api/hello", (req: Request, res: Response) => {
-  res.json({ message: "Hello from the TypeScript backend!" });
+  res.json({ message: "Hello from the TypeScript backend!" }); // Ensure res has json
 });
 
 if (process.env.NODE_ENV !== "production") {
