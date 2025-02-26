@@ -1,6 +1,7 @@
-import express, { Express, Request, Response } from "express";
+import express from "express";
+import { Request, Response } from "express"; // Separate import for types
 
-const app: Express = express();
+const app = express(); // Let TypeScript infer the type
 
 app.get("/api/hello", (req: Request, res: Response) => {
   res.json({ message: "Hello from the TypeScript backend!" });
