@@ -7,10 +7,18 @@
         "strict": true,
         "esModuleInterop": true,
         "moduleResolution": "node",
-        "noEmitOnError": true
+        "noEmitOnError": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/types"
+        ],
+        "lib": [
+            "ES2020",
+            "dom"
+        ]
     },
     "include": [
-        "src"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules",
